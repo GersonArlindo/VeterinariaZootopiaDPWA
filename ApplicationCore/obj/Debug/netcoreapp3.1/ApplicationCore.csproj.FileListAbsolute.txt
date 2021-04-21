@@ -1,0 +1,27 @@
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.deps.json
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csprojAssemblyReference.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.deps.json
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csprojAssemblyReference.cache
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.deps.json
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csprojAssemblyReference.cache
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb

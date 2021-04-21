@@ -1,0 +1,8 @@
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\bin\Release\netcoreapp3.1\ApplicationCore.deps.json
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\bin\Release\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\bin\Release\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Release\netcoreapp3.1\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Release\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Release\netcoreapp3.1\ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Release\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\ApplicationCore\obj\Release\netcoreapp3.1\ApplicationCore.pdb

@@ -1,0 +1,116 @@
+﻿@page
+@model WebApp.Areas.Productos.Pages.CreateModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Crear Producto";
+    Layout = "_Layout";
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>@ViewData["Title"]</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a asp-area="" asp-page="Index">Inicio</a></li>
+                    <li class="breadcrumb-item">Catalogos</li>
+                    <li class="breadcrumb-item">Productos</li>
+                    <li class="breadcrumb-item active">@ViewData["Title"]</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col align-self-lg-end">
+                <a asp-area="Productos" asp-page="Index" class="btn btn-outline-info float-right"><i class="fas fa-arrow-left"></i> Volver al Listado</a>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Llene su formulario correctamente</div>
+            <div class="card-tools">
+
+            </div>
+        </div>
+        <div class="card-body">
+            <!-- form start -->
+            <form method="post" asp-action="Create" autocomplete="off" enctype="multipart/form-data">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label asp-for="Producto.Codigo"></label>
+                        <input asp-for="Producto.Codigo" class="form-control" />
+                        <span asp-validation-for="Producto.Codigo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Producto.Nombre"></label>
+                        <input asp-for="Producto.Nombre" class="form-control" />
+                        <span asp-validation-for="Producto.Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Producto.Descripcion"></label>
+                        <input asp-for="Producto.Descripcion" class="form-control" />
+                        <span asp-validation-for="Producto.Descripcion" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Producto.Tipo"></label>
+                        <select asp-for="Producto.Tipo" class="form-control">
+                            <option value="@ApplicationCore.Enum.Tipo.Comida">@ApplicationCore.Enum.Tipo.Comida</option>
+                            <option value="@ApplicationCore.Enum.Tipo.Accesorios">@ApplicationCore.Enum.Tipo.Accesorios</option>
+                            <option value="@ApplicationCore.Enum.Tipo.Juguetes">@ApplicationCore.Enum.Tipo.Juguetes</option>
+                            <option value="@ApplicationCore.Enum.Tipo.Baño">@ApplicationCore.Enum.Tipo.Baño</option>
+                            <option value="@ApplicationCore.Enum.Tipo.Otros">@ApplicationCore.Enum.Tipo.Otros</option>
+                        </select>
+                        <span asp-validation-for="Producto.Tipo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Producto.Precio"></label>
+                        <input asp-for="Producto.Precio" class="form-control" />
+                        <span asp-validation-for="Producto.Precio" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Producto.Imagen"></label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="fileUpload" accept=".jpg, .jpeg, .png">
+                                <label class="custom-file-label" for="exampleInputFile">Escoger archivo</label>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text">Subir</span>
+                            </div>
+                        </div>
+                        <label></label>
+                    </div>
+
+                    @*<div class="form-group">
+                        <label asp-for="Producto.Imagen"></label>
+                        <input asp-for="Producto.Imagen" class="form-control" />
+                        <span asp-validation-for="Producto.Imagen" class="text-danger"></span>
+                    </div>*@
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Guardar</button> &nbsp;
+                    <button type="reset" class="btn btn-warning"><i class="fas fa-eraser"></i> Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+@section Scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript" language="javscript">
+        $.validator.unobtrusive.parse(document);
+        $(document).ready(function () {
+            $('#a-producto').addClass('active');
+        });
+    </script>
+}

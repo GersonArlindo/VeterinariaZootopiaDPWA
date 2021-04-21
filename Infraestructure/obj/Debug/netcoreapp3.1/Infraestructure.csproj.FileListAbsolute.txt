@@ -1,0 +1,45 @@
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.deps.json
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.runtimeconfig.json
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.runtimeconfig.dev.json
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.dll
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.pdb
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.csprojAssemblyReference.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.AssemblyInfoInputs.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.AssemblyInfo.cs
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.csproj.CopyComplete
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.dll
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.pdb
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.genruntimeconfig.cache
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.deps.json
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.runtimeconfig.json
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.runtimeconfig.dev.json
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.dll
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.pdb
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.csprojAssemblyReference.cache
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.AssemblyInfoInputs.cache
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.AssemblyInfo.cs
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.csproj.CopyComplete
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.dll
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.pdb
+C:\Users\Aby\Downloads\VeterinariaZootopia-master\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.genruntimeconfig.cache
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.deps.json
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.runtimeconfig.json
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.runtimeconfig.dev.json
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.dll
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\bin\Debug\netcoreapp3.1\Infraestructure.pdb
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.csprojAssemblyReference.cache
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.AssemblyInfoInputs.cache
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.AssemblyInfo.cs
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.csproj.CopyComplete
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.dll
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.pdb
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\Infraestructure\obj\Debug\netcoreapp3.1\Infraestructure.genruntimeconfig.cache

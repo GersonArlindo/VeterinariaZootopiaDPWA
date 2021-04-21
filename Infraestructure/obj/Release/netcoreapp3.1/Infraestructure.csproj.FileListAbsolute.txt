@@ -1,0 +1,15 @@
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Release\netcoreapp3.1\Infraestructure.deps.json
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Release\netcoreapp3.1\Infraestructure.runtimeconfig.json
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Release\netcoreapp3.1\Infraestructure.runtimeconfig.dev.json
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Release\netcoreapp3.1\Infraestructure.dll
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Release\netcoreapp3.1\Infraestructure.pdb
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Release\netcoreapp3.1\ApplicationCore.dll
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\bin\Release\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Release\netcoreapp3.1\Infraestructure.csprojAssemblyReference.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Release\netcoreapp3.1\Infraestructure.AssemblyInfoInputs.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Release\netcoreapp3.1\Infraestructure.AssemblyInfo.cs
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Release\netcoreapp3.1\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Release\netcoreapp3.1\Infraestructure.csproj.CopyComplete
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Release\netcoreapp3.1\Infraestructure.dll
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Release\netcoreapp3.1\Infraestructure.pdb
+C:\Users\Gerson Arlindo\Desktop\Proyecto_Veterinaria_PDWA\CleanArchitectureTemplate\Infraestructure\obj\Release\netcoreapp3.1\Infraestructure.genruntimeconfig.cache
