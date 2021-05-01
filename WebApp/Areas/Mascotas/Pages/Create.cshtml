@@ -1,0 +1,106 @@
+﻿@page
+@model WebApp.Areas.Mascotas.Pages.CreateModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{ ViewData["Title"] = "Crear Mascota";
+    Layout = "_Layout"; }
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h4>Insertar Productos</h4>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a asp-area="" asp-page="Index">Inicio</a></li>
+                    <li class="breadcrumb-item">Catalogos</li>
+                    <li class="breadcrumb-item">Usuarios</li>
+                    <li class="breadcrumb-item active">@ViewData["Title"]</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col align-self-lg-end">
+                <a asp-area="Mascotas" asp-page="Index" class="btn btn-outline-info float-right"><i class="fas fa-arrow-left"></i> Volver al Listado</a>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- Main content -->
+<section class="contact-box">
+    <div class="row no-gutters bg-dark">
+        <div class="col-xl-5 col-lg-12 register-bg2">
+            <div class="position-absolute testiomonial p-4">
+                <h3 class="font-weight-bold text-light">Los Mejores Productos los encuentras en VeterinariaZootopia.</h3>
+                <p class="lead text-light">Siempre lo mejor para los Mejores.</p>
+            </div>
+        </div>
+        <div class="col-xl-7 col-lg-12 d-flex">
+            <div class="container align-self-center p-6">
+                <h1 class="font-weight-bold mb-3">Cliente</h1>
+
+                <p class="text-muted mb-5">Ingresa la siguiente información para registrar una Mascota.</p>
+
+                <form method="post" asp-action="Create" autocomplete="off" enctype="multipart/form-data">
+                    <input type="hidden" asp-for="Mascota.UsuarioId" />
+                    <div class="form-group mb-3">
+                        <label asp-for="Mascota.Nombre"></label>
+                        <input asp-for="Mascota.Nombre" class="form-control" placeholder="Nombre" />
+                        <span asp-validation-for="Mascota.Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Mascota.FechaNacimiento"></label>
+                            <input asp-for="Mascota.FechaNacimiento" class="form-control" placeholder="FechaNacimiento" />
+                            <span asp-validation-for="Mascota.FechaNacimiento" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Mascota.Genero"></label>
+                        <input asp-for="Mascota.Genero" class="form-control" placeholder="Genero" />
+                        <span asp-validation-for="Mascota.Genero" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Mascota.Foto"></label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="fileUpload" accept=".jpg, .jpeg, .png">
+                                <label class="custom-file-label" for="exampleInputFile">Escoger archivo</label>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text">Subir</span>
+                            </div>
+                        </div>
+                        <label></label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-dark d-inline-block text-light mr-2 mb-3 width-100"><i class="icon ion-logo-google lead align-middle mr-2"></i> Guardar </button>
+                        <button type="reset" class="btn btn-outline-dark d-inline-block text-light mb-3 width-100"><i class="icon ion-logo-facebook lead align-middle mr-2"></i> Limpiar</button>
+                    </div>
+
+                </form>
+                <small class="d-inline-block text-muted mt-5">veterinaria Zootopia | © 2021</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts{
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="~/estiloAgregar/css/style.css">
+    <script type="text/javascript" src="~/estiloAgregar/js/main.js"></script>
+
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript" language="javscript">
+    $.validator.unobtrusive.parse(document);
+        $(document).ready(function () {
+            $('#a-usuario').addClass('active');
+        });</script>
+}

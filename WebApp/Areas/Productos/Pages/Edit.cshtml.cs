@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 using ApplicationCore.Entities;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using Infraestructure.Data;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using WebApp.Services;
 
 namespace WebApp.Areas.Productos.Pages
 {
@@ -14,6 +16,8 @@ namespace WebApp.Areas.Productos.Pages
     {
         private readonly MyRepository<Producto> _repository;
         private INotyfService _notyfService { get; }
+
+        private readonly IFileUploadService _fileUploadService;
 
         public EditModel(MyRepository<Producto> repository, INotyfService notyfService)
         {
@@ -34,7 +38,7 @@ namespace WebApp.Areas.Productos.Pages
             }
             return NotFound();
         }
-        public async Task<IActionResult> OnPost(int Id)
+        public async Task<IActionResult> OnPost(int Id, IFormFile photo)
         {
             try
             {
@@ -52,7 +56,6 @@ namespace WebApp.Areas.Productos.Pages
                     ProductoToUpdate.Descripcion = Producto.Descripcion;
                     ProductoToUpdate.Tipo = Producto.Tipo;
                     ProductoToUpdate.Precio = Producto.Precio;
-                    ProductoToUpdate.Imagen = Producto.Imagen;
 
                     await _repository.UpdateAsync(ProductoToUpdate);
                     _notyfService.Success("Producto editado exitosamente");

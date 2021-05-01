@@ -1,0 +1,68 @@
+﻿@page
+@model WebApp.Areas.MascotasUsuario.Pages.DeleteModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{ ViewData["Title"] = "Eliminar Cliente";
+    Layout = "_Layout"; }
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>@ViewData["Title"]</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a asp-area="" asp-page="Index">Inicio</a></li>
+                    <li class="breadcrumb-item">Catalogos</li>
+                    <li class="breadcrumb-item">Productos</li>
+                    <li class="breadcrumb-item">Eliminar Cliente</li>
+                    <li class="breadcrumb-item active">@ViewData["Title"]</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col align-self-lg-end">
+                <a asp-area="MascotasUsuario" asp-page="Index" class="btn btn-outline-info float-right"><i class="fas fa-arrow-left"></i> Volver al Listado</a>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title"><h1>Seguro que desea ELIMINAR este registro?</h1></div>
+            <div class="card-tools">
+            </div>
+        </div>
+        <div class="card-body">
+            <!-- form start -->
+            <form method="post" asp-action="Edit" asp-route-id="@Model.Usuario.Id" autocomplete="off">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label asp-for="Usuario.Nombre"></label>
+                        <input asp-for="Usuario.Nombre" class="form-control" readonly="readonly" />
+                        <span asp-validation-for="Usuario.Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Usuario.Apellido"></label>
+                        <input asp-for="Usuario.Apellido" class="form-control" readonly="readonly" />
+                        <span asp-validation-for="Usuario.Apellido" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Usuario.Direccion"></label>
+                        <input asp-for="Usuario.Direccion" class="form-control" readonly="readonly" />
+                        <span asp-validation-for="Usuario.Direccion" class="text-danger"></span>
+                    </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i> Eliminar</button> &nbsp;
+                    <a asp-area="MascotasUsuario" asp-page="Index" class="btn btn-outline-info float-right"><i class="fas fa-ban"></i>  Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

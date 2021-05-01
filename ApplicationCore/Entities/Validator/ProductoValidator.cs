@@ -21,8 +21,6 @@ namespace ApplicationCore.Entities.Validator
             RuleFor(x => x.Tipo).IsInEnum().WithMessage("Ingrese un Tipo valido");
 
             RuleFor(x => x.Precio).NotNull().WithMessage("Precio es requerido");
-
-            //RuleFor(x => x.Imagen).NotNull().WithMessage("Url de imagen es requerida");
         }
     }
 }

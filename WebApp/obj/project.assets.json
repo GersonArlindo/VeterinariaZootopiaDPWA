@@ -8200,25 +8200,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aby\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Gerson Arlindo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aby\\Desktop\\ProyectoVeterinaria\\VeterinariaZootopiaDPWA\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Gerson Arlindo\\Downloads\\Cosas que necesito para el proyecto DPWA\\VeterinariaZootopia\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "C:\\Users\\Aby\\Desktop\\ProyectoVeterinaria\\VeterinariaZootopiaDPWA\\WebApp\\WebApp.csproj",
-      "packagesPath": "C:\\Users\\Aby\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aby\\Desktop\\ProyectoVeterinaria\\VeterinariaZootopiaDPWA\\WebApp\\obj\\",
+      "projectPath": "C:\\Users\\Gerson Arlindo\\Downloads\\Cosas que necesito para el proyecto DPWA\\VeterinariaZootopia\\WebApp\\WebApp.csproj",
+      "packagesPath": "C:\\Users\\Gerson Arlindo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gerson Arlindo\\Downloads\\Cosas que necesito para el proyecto DPWA\\VeterinariaZootopia\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Aby\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Gerson Arlindo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -8231,11 +8226,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Aby\\Desktop\\ProyectoVeterinaria\\VeterinariaZootopiaDPWA\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\Aby\\Desktop\\ProyectoVeterinaria\\VeterinariaZootopiaDPWA\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\Gerson Arlindo\\Downloads\\Cosas que necesito para el proyecto DPWA\\VeterinariaZootopia\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\Gerson Arlindo\\Downloads\\Cosas que necesito para el proyecto DPWA\\VeterinariaZootopia\\ApplicationCore\\ApplicationCore.csproj"
             },
-            "C:\\Users\\Aby\\Desktop\\ProyectoVeterinaria\\VeterinariaZootopiaDPWA\\Infraestructure\\Infraestructure.csproj": {
-              "projectPath": "C:\\Users\\Aby\\Desktop\\ProyectoVeterinaria\\VeterinariaZootopiaDPWA\\Infraestructure\\Infraestructure.csproj"
+            "C:\\Users\\Gerson Arlindo\\Downloads\\Cosas que necesito para el proyecto DPWA\\VeterinariaZootopia\\Infraestructure\\Infraestructure.csproj": {
+              "projectPath": "C:\\Users\\Gerson Arlindo\\Downloads\\Cosas que necesito para el proyecto DPWA\\VeterinariaZootopia\\Infraestructure\\Infraestructure.csproj"
             }
           }
         }

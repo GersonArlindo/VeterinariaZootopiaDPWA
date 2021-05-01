@@ -70,7 +70,6 @@
             <table class="table table-responsive-md table-bordered table-striped">
                 <thead class="thead-dark">
                     <tr>
-
                         <th>Codigo</th>
                         <th>Nombre</th>
                         <th>Descripcion</th>
@@ -110,11 +109,13 @@
                     else
                     {
                         <tr>
-                            <td colspan="6" class="text-center">No se encontraron registros</td>
+                            <td colspan="12" class="text-center">No se encontraron registros</td>
                         </tr>
                     }
                 </tbody>
-            </table>
+            </table>       
+
+
         </div>
         <!-- /.card-body -->
         <div class="card-footer clearfix">
@@ -146,27 +147,4 @@
     </script>
     @await Component.InvokeAsync("Notyf");
 }
-<!--@section Scripts{-->
-<!-- Pager -->
-<!--<script src="~/js/pager.js"></script>-->
-<!-- SweetAlert2 -->
-<!--<script src="~/plugins/sweetalert2/sweetalert2.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#a-producto').addClass('active');
 
-            $('#pageSize').change(function () {
-                filterPaginate("pageSize", $(this).val())
-            });
-            $('.page-link').click(function () {
-                filterPaginate("currentPage", $(this).data("page"))
-            });
-            $('#searchString').on('keyup', function (e) {
-                if (e.key === "Enter" || e.keyCode == 13) {
-                    filterPaginate("searchString", $(this).val());
-                }
-            });
-        });
-    </script>
-    @await Component.InvokeAsync("Notyf");
-}-->

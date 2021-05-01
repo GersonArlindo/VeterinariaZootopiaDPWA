@@ -30,52 +30,63 @@
     <!-- /.container-fluid -->
 </section>
 <!-- Main content -->
-<section class="content">
-    <!-- Default box -->
-    <div class="card">
-        <div class="card-header">
-            <div class="card-title">Llene su formulario correctamente</div>
-            <div class="card-tools">
 
+<section class="contact-box">
+    <div class="row no-gutters bg-dark">
+        <div class="col-xl-5 col-lg-12 register-bg1">
+            <div class="position-absolute testiomonial p-4">
+                <h3 class="font-weight-bold text-light">Los Mejores Productos los encuentras en VeterinariaZootopia.</h3>
+                <p class="lead text-light">Siempre lo mejor para los Mejores.</p>
             </div>
         </div>
-        <div class="card-body">
-            <!-- form start -->
-            <form method="post" asp-action="Create" autocomplete="off">
-                <div class="card-body">
-                    <div class="form-group">
-                        <label asp-for="Plan.Codigo"></label>
-                        <input asp-for="Plan.Codigo" class="form-control" />
-                        <span asp-validation-for="Plan.Codigo" class="text-danger"></span>
+        <div class="col-xl-7 col-lg-12 d-flex">
+            <div class="container align-self-center p-6">
+                <h1 class="font-weight-bold mb-3">Planes de Salud</h1>
+
+                <p class="text-muted mb-5">Ingresa la siguiente información para registrar un Plan.</p>
+
+                <form method="post" asp-action="Create" autocomplete="off">
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Plan.Codigo"></label>
+                            <input asp-for="Plan.Codigo" class="form-control" />
+                            <span asp-validation-for="Plan.Codigo" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Plan.Nombre"></label>
+                            <input asp-for="Plan.Nombre" class="form-control" />
+                            <span asp-validation-for="Plan.Nombre" class="text-danger"></span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label asp-for="Plan.Nombre"></label>
-                        <input asp-for="Plan.Nombre" class="form-control" />
-                        <span asp-validation-for="Plan.Nombre" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
+                    <div class="form-group mb-3">
                         <label asp-for="Plan.Descripcion"></label>
                         <input asp-for="Plan.Descripcion" class="form-control" />
                         <span asp-validation-for="Plan.Descripcion" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
-                        <label asp-for="Plan.Precio"></label>
-                        <input asp-for="Plan.Precio" class="form-control" />
-                        <span asp-validation-for="Plan.Precio" class="text-danger"></span>
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Plan.Precio"></label>
+                            <input asp-for="Plan.Precio" class="form-control" placeholder="$"/>
+                            <span asp-validation-for="Plan.Precio" class="text-danger"></span>
+                        </div>
                     </div>
-                </div>
-                <!-- /.card-body -->
-                <div class="card-footer">
-                    <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Guardar</button> &nbsp;
-                    <button type="reset" class="btn btn-warning"><i class="fas fa-eraser"></i> Limpiar</button>
-                </div>
-            </form>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-dark d-inline-block text-light mr-2 mb-3 width-100"><i class="icon ion-logo-google lead align-middle mr-2"></i> Guardar </button>
+                        <button type="reset" class="btn btn-outline-dark d-inline-block text-light mb-3 width-100"><i class="icon ion-logo-facebook lead align-middle mr-2"></i> Limpiar</button>
+                    </div>
+
+                </form>
+                <small class="d-inline-block text-muted mt-5">veterinaria Zootopia | © 2021</small>
+            </div>
         </div>
     </div>
 </section>
+
 @section Scripts{
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/estiloAgregar/css/style.css">
+    <script type="text/javascript" src="~/estiloAgregar/js/main.js"></script>
     <script type="text/javascript" language="javscript">
         $.validator.unobtrusive.parse(document);
         $(document).ready(function () {

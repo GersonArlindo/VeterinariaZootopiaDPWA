@@ -8,7 +8,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>@ViewData["Title"]</h1>
+                <h4>Insertar Productos</h4>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -28,110 +28,39 @@
     <!-- /.container-fluid -->
 </section>
 <!-- Main content -->
-<section class="content">
-    <!-- Default box -->
-
-        <!--<div class="card-body">-->
-        <!-- form start -->
-        <!--<form method="post" asp-action="Create" autocomplete="off" enctype="multipart/form-data">
-        <div class="card-body">
-            <div class="form-group">
-                <label asp-for="Producto.Codigo"></label>
-                <input asp-for="Producto.Codigo" class="form-control" />
-                <span asp-validation-for="Producto.Codigo" class="text-danger"></span>
+<section class="contact-box">
+    <div class="row no-gutters bg-dark">
+        <div class="col-xl-5 col-lg-12 register-bg">
+            <div class="position-absolute testiomonial p-4">
+                <h3 class="font-weight-bold text-light">Los Mejores Productos los encuentras en VeterinariaZootopia.</h3>
+                <p class="lead text-light">Siempre lo mejor para los Mejores.</p>
             </div>
-            <div class="form-group">
-                <label asp-for="Producto.Nombre"></label>
-                <input asp-for="Producto.Nombre" class="form-control" />
-                <span asp-validation-for="Producto.Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Producto.Descripcion"></label>
-                <input asp-for="Producto.Descripcion" class="form-control" />
-                <span asp-validation-for="Producto.Descripcion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Producto.Tipo"></label>
-                <select asp-for="Producto.Tipo" class="form-control">
-                    <option value="@ApplicationCore.Enum.Tipo.Comida">@ApplicationCore.Enum.Tipo.Comida</option>
-                    <option value="@ApplicationCore.Enum.Tipo.Accesorios">@ApplicationCore.Enum.Tipo.Accesorios</option>
-                    <option value="@ApplicationCore.Enum.Tipo.Juguetes">@ApplicationCore.Enum.Tipo.Juguetes</option>
-                    <option value="@ApplicationCore.Enum.Tipo.Baño">@ApplicationCore.Enum.Tipo.Baño</option>
-                    <option value="@ApplicationCore.Enum.Tipo.Otros">@ApplicationCore.Enum.Tipo.Otros</option>
-                </select>
-                <span asp-validation-for="Producto.Tipo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Producto.Precio"></label>
-                <input asp-for="Producto.Precio" class="form-control" />
-                <span asp-validation-for="Producto.Precio" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <label asp-for="Producto.Imagen"></label>
-                <div class="input-group">
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="fileUpload" accept=".jpg, .jpeg, .png">
-                        <label class="custom-file-label" for="exampleInputFile">Escoger archivo</label>
-                    </div>
-                    <div class="input-group-append">
-                        <span class="input-group-text">Subir</span>
-                    </div>
-                </div>
-                <label></label>
-            </div>
-        </div>-->
-        <!-- /.card-body -->
-        <!--<div class="card-footer">
-                    <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Guardar</button> &nbsp;
-                    <button type="reset" class="btn btn-warning"><i class="fas fa-eraser"></i> Limpiar</button>
-                </div>
-            </form>
-        </div>-->
-        
-    <div class="container">
-        <div class="img">
-            <img src="https://i.ibb.co/1f9wXVX/logo-Veterinaria.png">
         </div>
-        <div class="login-content">
-            <form method="post" asp-action="Create" autocomplete="off" enctype="multipart/form-data">
-                <img src="https://i.ibb.co/HK4TQHm/z.png">
-                <h2 class="title">Producto Nuevo</h2>
-                <div class="input-div one">
-                    <div class="i">
-                        <i class="fas fa-keyboard"></i>
+        <div class="col-xl-7 col-lg-12 d-flex">
+            <div class="container align-self-center p-6">
+                <h1 class="font-weight-bold mb-3">Producto</h1>
+
+                <p class="text-muted mb-5">Ingresa la siguiente información para registrar un Producto.</p>
+
+                <form method="post" asp-action="Create" autocomplete="off" enctype="multipart/form-data">
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Producto.Codigo"></label>
+                            <input asp-for="Producto.Codigo" class="form-control" placeholder="####"/>
+                            <span asp-validation-for="Producto.Codigo" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Producto.Nombre"></label>
+                            <input asp-for="Producto.Nombre" class="form-control" placeholder="Nombre"/>
+                            <span asp-validation-for="Producto.Nombre" class="text-danger"></span>
+                        </div>
                     </div>
-                    <div class="div">
-                        <label asp-for="Producto.Codigo"></label>
-                        <input asp-for="Producto.Codigo" class="form-control" />
-                        <span asp-validation-for="Producto.Codigo" class="text-danger"></span>
-                    </div>
-                </div>
-                <div class="input-div pass">
-                    <div class="i">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="div">
-                        <label asp-for="Producto.Nombre"></label>
-                        <input asp-for="Producto.Nombre" class="form-control" />
-                        <span asp-validation-for="Producto.Nombre" class="text-danger"></span>
-                    </div>
-                </div>
-                <div class="input-div one">
-                    <div class="i">
-                        <i class="fas fa-audio-description"></i>
-                    </div>
-                    <div class="div">
+                    <div class="form-group mb-3">
                         <label asp-for="Producto.Descripcion"></label>
-                        <input asp-for="Producto.Descripcion" class="form-control" />
+                        <input asp-for="Producto.Descripcion" class="form-control" placeholder="Descripcion"/>
                         <span asp-validation-for="Producto.Descripcion" class="text-danger"></span>
                     </div>
-                </div>
-                <div class="input-div one">
-                    <div class="i">
-                        <i class="fas fa-list"></i>
-                    </div>
-                    <div class="div">
+                    <div class="form-group mb-3">
                         <label asp-for="Producto.Tipo"></label>
                         <select asp-for="Producto.Tipo" class="form-control">
                             <option value="@ApplicationCore.Enum.Tipo.Comida">@ApplicationCore.Enum.Tipo.Comida</option>
@@ -142,61 +71,54 @@
                         </select>
                         <span asp-validation-for="Producto.Tipo" class="text-danger"></span>
                     </div>
-                </div>
-                <div class="input-div one">
-                    <div class="i">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <div class="div">
-                        <label asp-for="Producto.Precio"></label>
-                        <input asp-for="Producto.Precio" class="form-control" />
-                        <span asp-validation-for="Producto.Precio" class="text-danger"></span>
-                    </div>
-                </div>
-                <div class="input-div one">
-                    <div class="i">
-                        <i class="fas fa-image"></i>
-                    </div>
-                    <div class="div">
-                        <label asp-for="Producto.Imagen"></label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" name="fileUpload" accept=".jpg, .jpeg, .png">
-                                <label class="custom-file-label" for="exampleInputFile">Escoger archivo</label>
-                            </div>
-                            <div class="input-group-append">
-                                <span class="input-group-text">Subir</span>
-                            </div>
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Producto.Precio"></label>
+                            <input asp-for="Producto.Precio" class="form-control" placeholder="$" />
+                            <span asp-validation-for="Producto.Precio" class="text-danger"></span>
                         </div>
-                        <label></label>
                     </div>
-                </div>
-                <div class="row align-items-center">
-                    <input type="submit" class="btn col" value="Guardar">
-                    
-                    <input type="reset" class="btn col" value="Limpiar">
-                </div>
-            </form>
+
+                    <div class="form-group mb-3">
+                            <label asp-for="Producto.Imagen"></label>
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="fileUpload" accept=".jpg, .jpeg, .png">
+                                    <label class="custom-file-label" for="exampleInputFile">Escoger archivo</label>
+                                </div>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">Subir</span>
+                                </div>
+                            </div>
+                            <label></label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-dark d-inline-block text-light mr-2 mb-3 width-100"><i class="icon ion-logo-google lead align-middle mr-2"></i> Guardar </button>
+                        <button type="reset" class="btn btn-outline-dark d-inline-block text-light mb-3 width-100"><i class="icon ion-logo-facebook lead align-middle mr-2"></i> Limpiar</button>
+                    </div>
+
+                </form>
+                <small class="d-inline-block text-muted mt-5">veterinaria Zootopia | © 2021</small>
+            </div>
         </div>
     </div>
-
 </section>
-@section Scripts{
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <link rel="stylesheet" type="text/css" href="~/estiloAgregar/css/style.css">
+    @section Scripts{
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="~/estiloAgregar/css/style.css">
+        <script type="text/javascript" src="~/estiloAgregar/js/main.js"></script>
 
 
-    <script type="text/javascript" src="~/estiloAgregar/js/main.js"></script>
-
-
-    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-    <script type="text/javascript" language="javscript">
-        $.validator.unobtrusive.parse(document);
-        $(document).ready(function () {
-            $('#a-producto').addClass('active');
-        });
-    </script>
-}
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script type="text/javascript" language="javscript">
+            $.validator.unobtrusive.parse(document);
+            $(document).ready(function () {
+                $('#a-producto').addClass('active');
+            });
+        </script>
+    }

@@ -1,3 +1,5 @@
+using ApplicationCore.Entities;
+using ApplicationCore.Interfaces;
 using AspNetCoreHero.ToastNotification;
 using AspNetCoreHero.ToastNotification.Extensions;
 using Infraestructure.Data;
@@ -29,6 +31,9 @@ namespace WebApp
             services.AddAutoMapper(typeof(AutomapperMaps));
             services.AddDbContext<AppDbContext>(c =>c.UseSqlServer(Configuration.GetConnectionString("AppConnection")));
             services.AddScoped<IFileUploadService, FileUploadService>();
+
+
+
 
             services.AddNotyf(config => { config.DurationInSeconds = 10; config.IsDismissable = true; config.Position = NotyfPosition.BottomRight; });
             services.AddRazorPages();

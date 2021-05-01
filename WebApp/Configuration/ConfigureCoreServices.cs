@@ -17,6 +17,8 @@ namespace WebApp.Configuration
         {
             services.AddScoped(typeof(MyRepository<>));
 
+            services.AddScoped(typeof(IRepository<>), typeof(MyRepository<>));
+
             services.AddSingleton<IUriComposer>(new UriComposer(configuration.Get<ApplicationSettings>()));
             services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
             services.AddScoped<IFileSystem, WebFileSystem>();
