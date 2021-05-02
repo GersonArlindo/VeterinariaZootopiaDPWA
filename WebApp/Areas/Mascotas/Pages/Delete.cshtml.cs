@@ -41,7 +41,7 @@ namespace WebApp.Areas.Mascotas.Pages
                 var MascotaToDelete = await _repository.GetByIdAsync(Id);
                 if (MascotaToDelete == null)
                 {
-                    _notyfService.Warning("No se encontro el producto con ese id");
+                    _notyfService.Warning("No se encontro la Mascota con ese id");
                     return RedirectToPage("Index");
                 }
 
@@ -49,7 +49,7 @@ namespace WebApp.Areas.Mascotas.Pages
                 {
 
                     await _repository.DeleteAsync(MascotaToDelete);
-                    _notyfService.Success("Producto eliminado exitosamente");
+                    _notyfService.Success("Mascota eliminada exitosamente");
                 }
                 else
                 {

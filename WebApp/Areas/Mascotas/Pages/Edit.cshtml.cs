@@ -73,7 +73,6 @@ namespace WebApp.Areas.Mascotas.Pages
                     MascotaToUpdate.UsuarioId = Mascota.UsuarioId;
                     MascotaToUpdate.FechaNacimiento = Mascota.FechaNacimiento;
                     MascotaToUpdate.Genero = Mascota.Genero;
-                    MascotaToUpdate.Foto = Mascota.Foto;
 
                     await _repository.UpdateAsync(MascotaToUpdate);
                     _notyfService.Success("Mascota editada exitosamente");

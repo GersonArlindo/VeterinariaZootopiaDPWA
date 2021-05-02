@@ -16,13 +16,14 @@ namespace WebApp.Areas.Productos.Pages
     {
         private readonly MyRepository<Producto> _repository;
         private INotyfService _notyfService { get; }
-
         private readonly IFileUploadService _fileUploadService;
 
-        public EditModel(MyRepository<Producto> repository, INotyfService notyfService)
+
+        public EditModel(MyRepository<Producto> repository, INotyfService notyfService, IFileUploadService fileUploadService)
         {
             _repository = repository;
             _notyfService = notyfService;
+            _fileUploadService = fileUploadService;
         }
 
 
@@ -56,6 +57,11 @@ namespace WebApp.Areas.Productos.Pages
                     ProductoToUpdate.Descripcion = Producto.Descripcion;
                     ProductoToUpdate.Tipo = Producto.Tipo;
                     ProductoToUpdate.Precio = Producto.Precio;
+                    if (photo != null)
+                    {
+                        _fileUploadService.DeleteFile(ProductoToUpdate.Imagen, Constants.PRODUCTOS_IMAGE_FOLDER);
+                        ProductoToUpdate.Imagen = await _fileUploadService.UploadFile(photo, Constants.PRODUCTOS_IMAGE_FOLDER);
+                    }
 
                     await _repository.UpdateAsync(ProductoToUpdate);
                     _notyfService.Success("Producto editado exitosamente");

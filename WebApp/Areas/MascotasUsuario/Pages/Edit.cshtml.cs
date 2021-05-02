@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 using ApplicationCore.Entities;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using Infraestructure.Data;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using WebApp.Services;
 
 namespace WebApp.Areas.MascotasUsuario.Pages
 {
@@ -50,7 +52,6 @@ namespace WebApp.Areas.MascotasUsuario.Pages
                     UsuarioToUpdate.Nombre = Usuario.Nombre;
                     UsuarioToUpdate.Apellido = Usuario.Apellido;
                     UsuarioToUpdate.Direccion = Usuario.Direccion;
-                    //UsuarioToUpdate.Foto = Usuario.Foto;
 
                     await _repository.UpdateAsync(UsuarioToUpdate);
                     _notyfService.Success("Usuario editado exitosamente");

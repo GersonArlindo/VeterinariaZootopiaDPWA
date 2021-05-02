@@ -14,10 +14,9 @@
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a asp-area="" asp-page="Index">Inicio</a></li>
+                    <li class="breadcrumb-item"><a asp-area="Productos" asp-page="Index">Inicio</a></li>
                     <li class="breadcrumb-item">Catalogos</li>
                     <li class="breadcrumb-item">Productos</li>
-                    <li class="breadcrumb-item">Editar Producto</li>
                     <li class="breadcrumb-item active">@ViewData["Title"]</li>
                 </ol>
             </div>
@@ -31,34 +30,43 @@
     <!-- /.container-fluid -->
 </section>
 <!-- Main content -->
-<section class="content">
-    <!-- Default box -->
-    <div class="card">
-        <div class="card-header">
-            <div class="card-title">Edite su formulario correctamente</div>
-            <div class="card-tools">
+
+
+
+
+<section class="contact-box">
+    <div class="row no-gutters bg-dark">
+        <div class="col-xl-5 col-lg-12 register-bg3">
+            <div class="position-absolute testiomonial p-4">
+                <h3 class="font-weight-bold text-light">Los Mejores Productos los encuentras en VeterinariaZootopia.</h3>
+                <p class="lead text-light">Siempre lo mejor para los Mejores.</p>
             </div>
         </div>
-        <div class="card-body">
-            <!-- form start -->
-            <form method="post" asp-action="Edit" asp-route-id="@Model.Producto.Id" autocomplete="off">
-                <div class="card-body">
-                    <div class="form-group">
-                        <label asp-for="Producto.Codigo"></label>
-                        <input asp-for="Producto.Codigo" class="form-control" />
-                        <span asp-validation-for="Producto.Codigo" class="text-danger"></span>
+        <div class="col-xl-7 col-lg-12 d-flex">
+            <div class="container align-self-center p-6">
+                <h1 class="font-weight-bold mb-3">Producto</h1>
+
+                <p class="text-muted mb-5">Ingresa la siguiente información para Editar un Producto.</p>
+
+                <form method="post" asp-action="Edit" asp-route-id="@Model.Producto.Id" autocomplete="off" enctype="multipart/form-data">
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Producto.Codigo"></label>
+                            <input asp-for="Producto.Codigo" class="form-control" placeholder="####" />
+                            <span asp-validation-for="Producto.Codigo" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Producto.Nombre"></label>
+                            <input asp-for="Producto.Nombre" class="form-control" placeholder="Nombre" />
+                            <span asp-validation-for="Producto.Nombre" class="text-danger"></span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label asp-for="Producto.Nombre"></label>
-                        <input asp-for="Producto.Nombre" class="form-control" />
-                        <span asp-validation-for="Producto.Nombre" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
+                    <div class="form-group mb-3">
                         <label asp-for="Producto.Descripcion"></label>
-                        <input asp-for="Producto.Descripcion" class="form-control" />
+                        <input asp-for="Producto.Descripcion" class="form-control" placeholder="Descripcion" />
                         <span asp-validation-for="Producto.Descripcion" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-3">
                         <label asp-for="Producto.Tipo"></label>
                         <select asp-for="Producto.Tipo" class="form-control">
                             <option value="@ApplicationCore.Enum.Tipo.Comida">@ApplicationCore.Enum.Tipo.Comida</option>
@@ -69,18 +77,37 @@
                         </select>
                         <span asp-validation-for="Producto.Tipo" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
-                        <label asp-for="Producto.Precio"></label>
-                        <input asp-for="Producto.Precio" class="form-control" />
-                        <span asp-validation-for="Producto.Precio" class="text-danger"></span>
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Producto.Precio"></label>
+                            <input asp-for="Producto.Precio" class="form-control" placeholder="$" />
+                            <span asp-validation-for="Producto.Precio" class="text-danger"></span>
+                        </div>
                     </div>
-                </div>
-                <!-- /.card-body -->
-                <div class="card-footer">
-                    <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Guardar</button> &nbsp;
-                    <button type="reset" class="btn btn-warning"><i class="fas fa-eraser"></i> Limpiar</button>
-                </div>
-            </form>
+
+                    <div class="form-row mb-3">
+                            <label>Imagen de Producto</label>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <span class="btn btn-info btn-file">
+                                        <i class="fas fa-file-upload"></i><input type="file" id="imgInp" name="photo">
+                                    </span>
+                                </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-info d-inline-block text-light mr-2 mb-3 width-100"><i class="icon ion-logo-google lead align-middle mr-2"></i> Guardar </button>
+                        <a asp-area="Productos" asp-page="Index" class="btn btn-outline-danger float-right"><i class="fas fa-ban"></i> Cancelar</a>
+                    </div>
+                </form>
+                <small class="d-inline-block text-muted mt-5">veterinaria Zootopia | © 2021</small>
+            </div>
         </div>
     </div>
 </section>
+
+@section Scripts{
+    <link rel="stylesheet" type="text/css" href="~/estiloAgregar/css/style.css">
+    <script type="text/javascript" src="~/estiloAgregar/js/main.js"></script>
+}

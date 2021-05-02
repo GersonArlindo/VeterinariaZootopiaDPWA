@@ -37,6 +37,7 @@ namespace WebApp.Areas.Planes.Pages
         {
             if (!ModelState.IsValid)
             {
+                _notyfService.Warning("No se encontro el plan con ese id");
                 return Page();
             }
 
@@ -51,7 +52,9 @@ namespace WebApp.Areas.Planes.Pages
             PlanToUpdate.Precio = Plan.Precio;
 
             await _repository.UpdateAsync(PlanToUpdate);
+            _notyfService.Success("Plan editado exitosamente");
             return RedirectToPage("./Index");
+            
         }
     }
 }

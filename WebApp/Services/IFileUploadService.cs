@@ -10,5 +10,8 @@ namespace WebApp.Services
     {
         Task<string> SaveFileOnDisk(IFormFile file, string fileName, string folderDestination);
         Task<string> SaveFileOnAWSS3(IFormFile file, string fileName, string bucketName);
+
+        Task<string> UploadFile(IFormFile file, string folderDestination);
+        bool DeleteFile(string fileName, string folderOrigin);
     }
 }

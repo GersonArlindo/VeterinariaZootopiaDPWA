@@ -42,7 +42,6 @@ namespace WebApp.Areas.Citas.Pages
 
             var CitaToDelete = await _repository.GetByIdAsync(Id);
             if (CitaToDelete == null)
-
                 return NotFound();
 
             CitaToDelete.CodigoCita = Cita.CodigoCita;
@@ -51,6 +50,7 @@ namespace WebApp.Areas.Citas.Pages
             CitaToDelete.Precio = Cita.Precio;
 
             await _repository.DeleteAsync(CitaToDelete);
+            _notyfService.Success("Producto eliminado exitosamente");
             return RedirectToPage("./Index");
         }
 

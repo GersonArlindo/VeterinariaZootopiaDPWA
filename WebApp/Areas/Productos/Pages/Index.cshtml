@@ -67,63 +67,100 @@
                     </div>
                 </div>
             </div>
-            <table class="table table-responsive-md table-bordered table-striped">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Codigo</th>
-                        <th>Nombre</th>
-                        <th>Descripcion</th>
-                        <th>Tipo</th>
-                        <th>Precio</th>
-                        <th>Imagen</th>
-                        <th style="width:20%;" class="text-center">Opciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @if (Model.Productos.Count > 0)
+
+            <div class="container">
+                @if (Model.Productos.Count > 0)
+                {
+                    @foreach (var item in Model.Productos)
                     {
-                        @foreach (var item in Model.Productos)
-                        {
-                    <tr>
-
-                        <td>@item.Codigo</td>
-                        <td>@item.Nombre</td>
-                        <td>@item.Descripcion</td>
-                        <td>@item.Tipo</td>
-                        <td>@item.Precio</td>
-                        <td class="text-wrap">
-                            <img alt="@item.Nombre" class="img-fluid img-thumbnail img-size-64" src="@item.Imagen">
-                            &nbsp;@item.Nombre
-                        </td>
-                        <td style="width: 20%;" class="text-center">
-                            <a class="btn btn-info btn-sm" asp-area="Productos" asp-page="Edit" asp-route-id="@item.Id">
-                                <i class="fas fa-pencil-alt"></i>
-                            </a>
-                            <a class="btn btn-danger btn-sm" asp-area="Productos" asp-page="Delete" asp-route-id="@item.Id">
-                                <i class="far fa-trash-alt"></i>
-                            </a>
-                        </td>
-                    </tr>
-                        }
+                <div class="card">
+                    <img alt="@item.Nombre" class="card-img-top" src="@item.Imagen">
+                    <h4>Nombre: @item.Nombre</h4>
+                    <p>Descripcion: @item.Descripcion</p>
+                    <p>Tipo: @item.Tipo</p>
+                    <h3>$@item.Precio</h3>
+                    <a class="btn btn-info btn-sm" asp-area="Productos" asp-page="Edit" asp-route-id="@item.Id">
+                        <i class="fas fa-pencil-alt"></i>
+                    </a>
+                    <a class="btn btn-danger btn-sm" asp-area="Productos" asp-page="Delete" asp-route-id="@item.Id">
+                        <i class="far fa-trash-alt"></i>
+                    </a>
+                </div>
                     }
-                    else
-                    {
-                        <tr>
-                            <td colspan="12" class="text-center">No se encontraron registros</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>       
+                }
+                else
+                {
 
+                    <h1 class="text-center">No se encontraron registros</h1>
 
+                }
+            </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer clearfix">
+                <partial name="_PaginationUI" model="Model.UIPagination" />
+            </div>
         </div>
-        <!-- /.card-body -->
-        <div class="card-footer clearfix">
-            <partial name="_PaginationUI" model="Model.UIPagination" />
-        </div>
-    </div>
 </section>
 @section Scripts{
+
+    <style>
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 480px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}*/
+    </style>
     <!-- Pager -->
     <script src="~/js/pager.js"></script>
     <!-- SweetAlert2 -->
