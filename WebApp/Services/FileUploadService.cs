@@ -23,6 +23,25 @@ namespace WebApp.Services
             _webHostEnvironment = webHostEnvironment;
         }
 
+        public bool DeleteFile(string fileName, string folderOrigin)
+        {
+            try
+            {
+                var path = $"{_webHostEnvironment.WebRootPath}\\uploads\\{folderOrigin}\\{fileName}";
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message);
+                return false;
+            }
+        }
+
         public async Task<string> SaveFileOnAWSS3(IFormFile file, string fileName, string bucketName)
         {
             try
@@ -41,7 +60,41 @@ namespace WebApp.Services
                 return null;
             }
         }
-        
+
+
+        public async Task<string> UploadFile(IFormFile file, string folderDestination)
+        {
+            try
+            {
+                if (file == null)
+                    return null;
+
+                FileInfo fileInfo = new FileInfo(file.FileName);
+                var fileName = Guid.NewGuid().ToString() + fileInfo.Extension;
+                var folderDirectory = $"{_webHostEnvironment.WebRootPath}\\uploads\\{folderDestination}";
+                var path = Path.Combine(_webHostEnvironment.WebRootPath, $"uploads\\{folderDestination}", $"{fileName}{fileInfo.Extension}");
+
+                var memoryStream = new MemoryStream();
+                await file.OpenReadStream().CopyToAsync(memoryStream);
+
+                if (!Directory.Exists(folderDirectory))
+                {
+                    Directory.CreateDirectory(folderDirectory);
+                }
+
+                await using (var fs = new FileStream(path, FileMode.Create, FileAccess.Write))
+                {
+                    memoryStream.WriteTo(fs);
+                }
+                return $"https://localhost:44356/uploads/" + $"{folderDestination}/{fileName}{fileInfo.Extension}";
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message);
+                return null;
+            }
+        }
+
         public async Task<string> SaveFileOnDisk(IFormFile file, string fileName, string folderDestination)
         {
             try

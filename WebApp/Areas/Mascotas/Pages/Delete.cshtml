@@ -1,7 +1,7 @@
 ﻿@page
 @model WebApp.Areas.Mascotas.Pages.DeleteModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@{ ViewData["Title"] = "Eliminar Cliente";
+@{ ViewData["Title"] = "Eliminar Mascota";
     Layout = "_Layout"; }
 <!-- Content Header (Page header) -->
 <section class="content-header">
@@ -15,7 +15,6 @@
                     <li class="breadcrumb-item"><a asp-area="" asp-page="Index">Inicio</a></li>
                     <li class="breadcrumb-item">Catalogos</li>
                     <li class="breadcrumb-item">Productos</li>
-                    <li class="breadcrumb-item">Eliminar Cliente</li>
                     <li class="breadcrumb-item active">@ViewData["Title"]</li>
                 </ol>
             </div>
@@ -39,7 +38,8 @@
         </div>
         <div class="card-body">
             <!-- form start -->
-            <form method="post" asp-action="Delete" asp-route-id="@Model.Mascota.Id" autocomplete="off">
+            <form method="post" asp-action="Edit" asp-route-id="@Model.Mascota.Id" autocomplete="off">
+                <input type="hidden" asp-for="Mascota.UsuarioId" />
                 <div class="card-body">
                     <div class="form-group">
                         <label asp-for="Mascota.Id"></label>
@@ -66,3 +66,27 @@
         </div>
     </div>
 </section>
+
+
+@section Scripts{
+
+    <style>
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+
+            .content .card {
+                width: 500px;
+                height: 800px;
+                border-radius: 8px;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                margin: 20px;
+                text-align: center;
+                transition: all 0.25s;
+            }
+    </style>
+}

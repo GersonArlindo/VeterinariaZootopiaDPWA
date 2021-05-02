@@ -30,19 +30,18 @@
     <!-- /.container-fluid -->
 </section>
 <!-- Main content -->
+
 <section class="content">
     <!-- Default box -->
     <div class="card">
         <div class="card-header">
-            <div class="card-title">Eliminar Registro</div>
+            <div class="card-title"><h1>Seguro que desea ELIMINAR este registro?</h1></div>
             <div class="card-tools">
-
             </div>
         </div>
         <div class="card-body">
             <!-- form start -->
             <form method="post" asp-action="Eliminar" asp-route-id="@Model.Plan.Id" autocomplete="off">
-                <div asp-validation-summary="ModelOnly"></div>
                 <div class="card-body">
                     <div class="form-group">
                         <label asp-for="Plan.Codigo"></label>
@@ -67,14 +66,35 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i> Eliminar</button> &nbsp;
-                    <a asp-area="Planes" asp-page="Index" class="btn btn-outline-info float-right"><i class="fas fa-ban"></i>  Cancelar</a>
+                    <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i> Eliminar</button> &nbsp;
+                    <a asp-area="Planes" asp-page="Index" class="btn btn-outline-info float-right"><i class="fas fa-ban"></i> Cancelar</a>
                 </div>
             </form>
         </div>
     </div>
 </section>
+
 @section Scripts{
+    <style>
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+
+            .content .card {
+                width: 500px;
+                height: 800px;
+                border-radius: 8px;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                margin: 20px;
+                text-align: center;
+                transition: all 0.25s;
+            }
+    </style>
+
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     <script type="text/javascript" language="javscript">

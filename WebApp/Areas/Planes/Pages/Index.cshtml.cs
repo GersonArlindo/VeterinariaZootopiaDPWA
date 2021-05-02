@@ -29,13 +29,14 @@ namespace WebApp.Areas.Planes.Pages
 
         public async Task OnGetAsync(string searchString, int? currentPage, int? sizePage)
         {
-            var totalItems = await _repository.CountAsync(new PlanSpec(new PlanFilter { Codigo = searchString, LoadChildren = false, IsPagingEnabled = true }));
+            var totalItems = await _repository.CountAsync(new PlanSpec(new PlanFilter { Nombre = searchString, LoadChildren = false, IsPagingEnabled = true }));
             UIPagination = new UIPaginationModel(currentPage, searchString, sizePage, totalItems);
 
             Planes = await _repository.ListAsync(new PlanSpec(
                 new PlanFilter
                 {
                     IsPagingEnabled = true,
+                    Nombre = UIPagination.SearchString,
                     Codigo = UIPagination.SearchString,
                     SizePage = UIPagination.GetSizePage,
                     Page = UIPagination.GetCurrentPage

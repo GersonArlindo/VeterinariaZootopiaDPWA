@@ -18,7 +18,7 @@ namespace ApplicationCore.Specification
                      .Take(PaginationHelper.CalculateTake(filter));
 
             if (!string.IsNullOrEmpty(filter.Codigo))
-                Query.Search(x => x.Codigo, "%" + filter.Codigo + "%");
+                Query.Search(x => x.Nombre, "%" + filter.Nombre + "%");
         }
     }
 }

@@ -1212,6 +1212,14 @@ C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\Veter
 C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\WebApp.TagHelpers.input.cache
 C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\WebApp.TagHelpers.output.cache
 C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\WebApp.RazorCoreGenerate.cache
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Citas\Pages\Create.cshtml.g.cs
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Citas\Pages\Delete.cshtml.g.cs
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Citas\Pages\Edit.cshtml.g.cs
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Citas\Pages\Index.cshtml.g.cs
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Contactos\Pages\Create.cshtml.g.cs
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Contactos\Pages\Delete.cshtml.g.cs
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Contactos\Pages\Edit.cshtml.g.cs
+C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Contactos\Pages\Index.cshtml.g.cs
 C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\MascotasUsuario\Pages\Create.cshtml.g.cs
 C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\MascotasUsuario\Pages\Delete.cshtml.g.cs
 C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\MascotasUsuario\Pages\Edit.cshtml.g.cs
@@ -1244,11 +1252,3 @@ C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\Veter
 C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\ref\WebApp.dll
 C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\WebApp.pdb
 C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\WebApp.genruntimeconfig.cache
-C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Citas\Pages\Create.cshtml.g.cs
-C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Citas\Pages\Delete.cshtml.g.cs
-C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Citas\Pages\Edit.cshtml.g.cs
-C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Citas\Pages\Index.cshtml.g.cs
-C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Contactos\Pages\Create.cshtml.g.cs
-C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Contactos\Pages\Delete.cshtml.g.cs
-C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Contactos\Pages\Edit.cshtml.g.cs
-C:\Users\Gerson Arlindo\Downloads\Cosas que necesito para el proyecto DPWA\VeterinariaZootopia\WebApp\obj\Debug\net5.0\Razor\Areas\Contactos\Pages\Index.cshtml.g.cs

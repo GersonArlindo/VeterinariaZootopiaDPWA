@@ -74,6 +74,26 @@
     </div>
 </section>
 @section Scripts{
+        <style>
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: auto;
+            }
+
+                .content .card {
+                    width: 500px;
+                    height: 800px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                    overflow: hidden;
+                    margin: 20px;
+                    text-align: center;
+                    transition: all 0.25s;
+                }
+        </style>
+
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     <script type="text/javascript" language="javscript">
