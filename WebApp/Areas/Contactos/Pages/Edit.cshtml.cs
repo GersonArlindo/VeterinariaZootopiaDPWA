@@ -51,7 +51,6 @@ namespace WebApp.Areas.Contactos.Pages
                     ContactoToUpdate.Nombre = Contacto.Nombre;
                     ContactoToUpdate.SobreMi = Contacto.SobreMi;
                     ContactoToUpdate.Telefono = Contacto.Telefono;
-                    ContactoToUpdate.Imagen = Contacto.Imagen;
 
                     await _repository.UpdateAsync(ContactoToUpdate);
                     _notyfService.Success("Contacto editado exitosamente");
