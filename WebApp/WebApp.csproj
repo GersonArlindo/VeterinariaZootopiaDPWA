@@ -25,7 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Citas\Pages\" />
     <Folder Include="Areas\Contactos\Pages\" />
     <Folder Include="wwwroot\estiloAgregar\img\" />
     <Folder Include="wwwroot\uploads\productos\" />
